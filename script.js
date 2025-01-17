@@ -1,18 +1,27 @@
 function validateSyntax() {
-    let input = document.getElementById('petInput').value;
-    // Validation logic goes here
-    let result = 'Valid Syntax';
-    let petInput = 'pet_numAlpha';
+  let input = document.getElementById("petInput").value;
+  // Validation logic goes here
+  document.getElementById('petInput').addEventListener("validateSyntax", function(event) {
+    event.preventDefault;
 
-    if (petInput == pet_numAlpha){
-        console.log (result);
-    } else {
-        console.log ('Invalid Syntax');
-    } 
+    let result = document.getElementById("Valid Syntax").value;
+    let petInput = document.getElementById("pet_numAlpha").value;
+  
+  }
+  petInput.addEventListener('validateSyntax',(e)=>{
+    if (petInput === pet_numAlpha) {
+        e.preventDefault();
+        console.log(result);
+      } else {
+        console.log("Invalid Syntax");
+      } 
+  } )
+    
+  
 
-     // Placeholder for validation result
+  // Placeholder for validation result
 
-
-    // TODO: Write your validation logic here
-        // Check if input starts with 'pet_' and followed  by alphanumeric characters
+  // TODO: Write your validation logic here
+  
+  // Check if input starts with 'pet_' and followed  by alphanumeric characters
 }
